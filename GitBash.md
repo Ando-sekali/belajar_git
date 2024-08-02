@@ -128,7 +128,7 @@ git remote origin
 
 Contoh : 
 
-![[Pasted image 20240802112502.png]]
+![](Assets/remote_origin.PNG)
 
 Jadi, Menggunakan `git remote` dengan `origin` memungkinkan Anda untuk mengelola bagaimana dan di mana kode Anda disinkronkan dan dibagikan dengan repositori jarak jauh.
 
@@ -142,7 +142,7 @@ git add .
 
 Contoh penerapan : 
 
-![[Pasted image 20240802112523.png]]
+![](Assets/git_add.PNG)
 
 Dalam contoh di atas merupakan persiapan untuk perubahan sebelum kita menginput atau menyimpannya di dalam **commit**
 
@@ -157,7 +157,7 @@ git commit -m
 
 Contoh penerapan dalam **git** : 
 
-![[Pasted image 20240802112612.png]]
+![](Assets/git_commit.PNG)
 
 Contoh di atas menyatakan perintah:
 - **`git commit`**: Perintah ini menyimpan isi dari perubahan yang ada ke dalam riwayat commit repositori Git. Commit ini mencatat perubahan yang telah dibuat dan memberikan konteks untuk perubahan tersebut.
