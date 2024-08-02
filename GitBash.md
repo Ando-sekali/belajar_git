@@ -1,4 +1,4 @@
-# Instalasi Git bash
+x# Instalasi Git bash
 1. Buka browser dan ketikan **git csm** 
 ![](Assets/instal_1.PNG)
 
