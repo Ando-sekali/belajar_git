@@ -123,7 +123,7 @@ digunakan untuk mengelola repositori jarak jauh (remote repositories) yang terhu
 
 ketik code seperti berikut : 
 ```bash
-git remote origin
+git remote add origin
 ```
 
 Contoh : 
