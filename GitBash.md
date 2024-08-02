@@ -28,14 +28,14 @@ Untuk membuat repository baru di GitHub, ikuti langkah-langkah berikut.
 ![](Assets/New_repository2.PNG)
 
 Sebagai Contoh : 
-![](Assets/New_repository3.PNG)
+![[Pasted image 20240802112259.png]]
 
 4. Setelah semuanya siap, langsung klik **Create repository** di bawah 
 ![](Assets/New_repository4.PNG)
 
 5. Selanjutnya kita di arahkan ke tampilan Repository baru 
 
-![](Assets/New_repository5.PNG)
+![[Pasted image 20240802112331.png]]
 # Konfigurasi awal di git bash (config)
 
 1. git config --list
@@ -128,7 +128,7 @@ git remote origin
 
 Contoh : 
 
-![](Assets/remote_origin.PNG)
+![[Pasted image 20240802112502.png]]
 
 Jadi, Menggunakan `git remote` dengan `origin` memungkinkan Anda untuk mengelola bagaimana dan di mana kode Anda disinkronkan dan dibagikan dengan repositori jarak jauh.
 
