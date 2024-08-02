@@ -1,116 +1,195 @@
-	git remote add origin https://github.com/Ando-sekali/Belajar-git.git
+# Instalasi Git bash
+1. Buka browser dan ketikan **git csm** 
+![](Assets/instal_1.PNG)
 
-# Instalasi Git Bash
+2. Tampilan akan seperti gambar di bawah. Setelah itu klik **Download for Windows** karena di sini saya menggunakan sistem operasi *Windows* 
 
-1.  download Git pada browser ketik 'git-scm'       
+![](Assets/instal_2.PNG)
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg)
 
-2.  lalu klik Git Hub yang telah di instal
+---
+Sesudah di downloaad, next ke semua arahan dari file **.exe** nya
 
-3.  Lalu akan muncul tampilan seperti gambar
+3. Setelah terinstal, buka *gitbash* dan cek versi git di laptop kalian
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![](Assets/git_version.PNG)
 
-4.  Maka klik 'next' terus hingga mendapatkan tampilan seperti gambar
+> Perintah ini berguna untuk memeriksa versi Git yang Anda gunakan, yang dapat bermanfaat dalam mengidentifikasi dan mengatasi masalah kompatibilitas.
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg)
+# Buat repository di gituhub
+Untuk membuat repository baru di GitHub, ikuti langkah-langkah berikut.
 
-# Login Akun Github
+1. Pastikan anda sudah memiliki akun **github** dan login ke dalam **github**...
+2. Klik ikon di pojok kanan (ketiga dari kanan), dan klik **New Depository
 
-1.  Buka aplikasi github di browser
+![](Assets/New_repository.PNG)
 
-2.  Lalu lakukan sign up pada github
+3. Tampilan selanjutnya akan seperti in, dan isi kolom **Repositoy name** sesuai keinginan
+![](Assets/New_repository2.PNG)
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)  
+Sebagai Contoh : 
+![](Assets/New_repository3.PNG)
 
-3.  Jika sudah memiliki akun langsung masukkan password dan username yang ada
+4. Setelah semuanya siap, langsung klik **Create repository** di bawah 
+![](Assets/New_repository4.PNG)
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg)
+5. Selanjutnya kita di arahkan ke tampilan Repository baru 
 
-4.  Jika tidak memiliki akun klik tambahkan akun
+![](Assets/New_repository5.PNG)
+# Konfigurasi awal di git bash (config)
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+1. git config --list
+Perintah `git config --list` digunakan untuk menampilkan konfigurasi Git yang saat ini aktif pada sistem Anda.
 
-5.  Setelah buat akun maka akan tampil seperti gambar
+- **`git config`**: Perintah ini digunakan untuk membaca dan mengubah konfigurasi Git. Konfigurasi ini mencakup pengaturan seperti nama pengguna, email, dan preferensi Git lainnya.
+- **`--list`**: Opsi ini digunakan untuk menampilkan semua pengaturan konfigurasi yang saat ini berlaku, baik dari file konfigurasi global, lokal, maupun sistem.
 
-![](file:///C:/Users/ASUS/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+2. atur konfigurasi email dan username
 
-# Buat Repository
-
-1.  jika sudah sign up pada github maka akan tampil seperti gambar
-
-![[Pasted image 20240801073213.png]]
-
-2.  Lalu klik 'New repository' maka akan tampil seperti gambar
-
-![[Pasted image 20240801073621.png]]
-
-3.  Setelah itu tambahkan nama repository yang di inginkan
-
-![[Screenshot 2024-08-01 073453.png]]
-
-4.  Lalu klik 'Create repository' maka repository akan di buat
-
-![[Pasted image 20240801073644.png]]
-
-5. Berikut adalah tampilan depositori baru kita
-
-![[Pasted image 20240801073745.png]]
-# Navigasi Dasar Git dengan cd, ls, dan pwd
-Ketika bekerja dengan Git, penting untuk tahu cara menavigasi sistem file Anda. Meskipun Git sendiri tidak menyediakan perintah untuk berpindah direktori atau melihat isi folder, perintah dasar di terminal seperti `cd`, `ls`, dan `pwd` sangat membantu.
-Maka dari itu, mari kita kita simak penjelasan navigasi - navigasi tersebut : 
-## cd 
-
-- Pengertian dan fungsi `cd`
-> Perintah `cd` adalah singkatan dari **"Change Directory"**. Fungsi utama dari `cd` adalah untuk **berpindah dari satu direktori ke direktori lain** dalam sistem file.
-
-Berikut *code* dalam penggunaan navigasi `cd` dalam *Git* : 
+Untuk mengatur konfigurasi username dan email yang tujuannya untuk mengkoneksikan 
+kita bisa mengetik code seperti berikut : 
 
 ```bash
-cd nama_direktori
+git config --global user.name "nama_username"
+git config --global user.email "email_kita"
 ```
 
-![[Pasted image 20240731203324.png]]
+Sebagai Contoh : 
 
-> Contoh di atas dinyatakan bahwa perintah `cd documents` digunakan di terminal atau command prompt untuk berpindah ke direktori yang bernama `documents`
+![](Assets/config.PNG)
 
-## ls
-- Makna perintah `ls` dan fungsi nya
-Perintah `ls` adalah salah satu perintah dasar di terminal yang digunakan untuk **menampilkan daftar file dan direktori** dalam direktori saat ini. Perintah ini **sangat berguna untuk melihat konten direktori dan memverifikasi file atau folder yang ada.**
+3. Untuk melihat apakah konfigurasi nya sudah berhasil, ketik : 
+```bash
+git config --list
+```
 
-berikut contoh penggunakan code navigasi `ls`
+Sebagai Contoh : 
+![](Assets/config2.PNG)
+
+Setelah mengatur konfigurasi username dan email kita, kita gunakan kembali perintah `git config --list`. Untuk menampilkan seluruh pengaturan konfigurasi dan mengecek apakah konfigurasi yang sebelumnhya sudah berlaku atau belum...
+# Akses Folder proyek di git bash
+gunakan perintah cd sampai ke direktori
+
+1. Gunakan perintah `cd` 
+Untuk mengakses folder proyek di Git Bash menggunakan perintah `cd`, Anda akan mengikuti langkah-langkah yang mirip dengan cara Anda mengakses folder di Command Prompt Windows.
+
+berikut code penerapan : 
+```bash
+cd "nama_folder"
+```
+
+Contoh penepan dalam **gitbash** : 
+
+![](Assets/cd.PNG)
+
+Jika perlu, setiap kita mengganti direktori. Saya ingin memperkenalkan perintah `ls`, dalam git yang berfungsi untuk melampirkan/menampilkan isi dari direktori (membuka jalan menuju folder proyek kita).
+	Nah di sini saya sudah tau kemana arah folder proyek saya, kita bisa menggunakan perintah sebagai berikut : 
+	
+```bash
+cd "nama_folder/nama_folder dst..."
+```
+
+Contoh penerapan dalam **gitbash** : 
+
+![](Assets/cd2.PNG)
+
+> Nah sekarang saya sudah berhasil mengakses folder proyek saya di **git**...
+
+Contoh di atas bertujuan menuju ke folder proyek kita dengan sekali jalan, tanpa harus setiap kali memakai perintah `ls` untuk melihat kemana kita selanjutnya.
+
+# Menghubungkan folder proyek lokal ke github
+
+Untuk memudahkan pengelolaan versi dan kolaborasi, Anda dapat menghubungkan folder proyek lokal Anda ke GitHub. Berikut adalah langkah-langkah sederhana untuk menginisialisasi repository lokal, menghubungkannya dengan GitHub
+
+Berikut adalah langkah langkah **menghubungkan folder proyek kita ke github**
+
+1. Instalasi repository, ketik code sebagai berikut : 
 
 ```bash
-ls
+git init
 ```
 
-- contoh : 
+Contoh : 
 
-![[Pasted image 20240731204522.png]]
+![](Assets/git_init.PNG)
 
-> Dalam contoh di atas di nyatakan bahwa ketika kita menggunakan perintah `ls`, maka outputnya akan menampilkan isi dari file/direktori *documents* 
 
-## PWD 
-- Pengertian perintah `pwd` dan fungsi
-Perintah `pwd` adalah singkatan dari **"Print Working Directory"**. Perintah ini digunakan di terminal untuk **menampilkan jalur (path) lengkap dari direktori kerja saat ini**. Ini **sangat berguna untuk mengetahui di mana Anda berada dalam sistem file**, terutama saat Anda berpindah-pindah antara direktori. 
+> Contoh di atas menyatakan bahwa perintah `git init` **memulai repository Git** di dalam folder proyek lokal. Dengan kata lain, perintah `git init` merupakan langkah awal dalam proses pembuatan dan pengaturan repository Git di komputer Anda.
 
-Nah, berikut contoh dan code penggunaan navigasi perintah `pwd` 
+2. Hubungkan ke repository 
 
+Untuk menghubungkan file lokal kita ke repository, lita mesti menggunakan code `git remote origin` yang
+digunakan untuk mengelola repositori jarak jauh (remote repositories) yang terhubung dengan repositori lokal Anda. Salah satu aspek penting dalam pengelolaan remote adalah `origin`, yang merupakan nama standar untuk remote utama saat pertama kali Anda menghubungkan repositori lokal Anda dengan repositori jarak jauh.
+
+ketik code seperti berikut : 
 ```bash
-pwd
+git remote origin
 ```
 
-![[Pasted image 20240731210211.png]]
+Contoh : 
 
-Dari contoh penggunaan code `pwd`di atas dapat di simpulkan sebagai berikut :
+![](Assets/remote_origin.PNG)
 
-> - **Fungsi:** Menampilkan jalur lengkap dari direktori documents
-> -  **Kegunaan:** Memastikan lokasi saat ini di sistem file, membantu dalam navigasi dan pemahaman struktur direktori documents
+Jadi, Menggunakan `git remote` dengan `origin` memungkinkan Anda untuk mengelola bagaimana dan di mana kode Anda disinkronkan dan dibagikan dengan repositori jarak jauh.
+
+3. Tambahkan file atau perubahan pada depository 
+Untuk memodifikasi isi dari depository, maka digunakan perintah `git add .` yang mana dalam Git  berfungsi untuk menambahkan perubahan pada file di direktori
+
+berikut penulisan code : 
+```bash
+git add .
+```
+
+Contoh penerapan : 
+
+![](Assets/git_add.PNG)
+
+Dalam contoh di atas merupakan persiapan untuk perubahan sebelum kita menginput atau menyimpannya di dalam **commit**
+
+4. Tambah pesan dan menyimpannya ke dalam **commit**
+
+Dalam konteks perintah `git commit -m`, istilah "disertakan dalam opsi `-m`" merujuk pada cara Anda memberikan pesan commit secara langsung melalui opsi `-m` di baris perintah.
+
+Berikut code penerapan : 
+```bash
+git commit -m
+```
+
+Contoh penerapan dalam **git** : 
+
+![](Assets/git_commit.PNG)
+
+Contoh di atas menyatakan perintah:
+- **`git commit`**: Perintah ini menyimpan isi dari perubahan yang ada ke dalam riwayat commit repositori Git. Commit ini mencatat perubahan yang telah dibuat dan memberikan konteks untuk perubahan tersebut.
+
+-  **`-m "Baru_pertama"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
+
+Jadi, perintah `git commit -m` ini berfungsi untuk memungkinkan Anda untuk **menyertakan pesan commit secara langsung** di baris perintah.
+
+5.  Unggah semua perubahan yang sudah di modifikasi sebelumnya
+
+digunakan untuk mengirimkan perubahan yang telah Anda commit di repositori lokal ke repositori jarak jauh (remote repository). 
+
+berikut perintah penerapannya : 
+```bash
+git push origin
+```
+
+Contoh penerapan dalam **git** : 
+![](Assets/git_push.PNG)
+
+Singkatnya, perintah `git push origin` ini berfungsi untuk memungkinkan Anda untuk membagikan  atau mengirim perubahan yang sudah di modifikasi.
+
+6. Login ke akun github 
+Setelah kita selesai memodifikasi perubahan pada direktori, kita login ke akun **github** kita dan langsung masuk ke dalam depository untuk melihat, apakah sudah terubah/termodifikasi depository kita...
+
+- Sebelum termodifikasi : 
+![](Assets/New_repository5.PNG)
+
+- Sesudah termodifikasi : 
+
+![[Pasted image 20240801221715.png]]
+
+> Nah saya sudah berhasil memodifikasi isi depository saya di **github**, ada 1 commit yang sudah kita tambahkan sebelumnya...
 
 
-
-
-
-
-![]aset(![[Screenshot_20230624-172528~2.png]])
