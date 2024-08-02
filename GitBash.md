@@ -142,7 +142,7 @@ git add .
 
 Contoh penerapan : 
 
-![](Assets/git_add.PNG)
+![[Pasted image 20240802112523.png]]
 
 Dalam contoh di atas merupakan persiapan untuk perubahan sebelum kita menginput atau menyimpannya di dalam **commit**
 
@@ -157,12 +157,12 @@ git commit -m
 
 Contoh penerapan dalam **git** : 
 
-![](Assets/git_commit.PNG)
+![[Pasted image 20240802112612.png]]
 
 Contoh di atas menyatakan perintah:
 - **`git commit`**: Perintah ini menyimpan isi dari perubahan yang ada ke dalam riwayat commit repositori Git. Commit ini mencatat perubahan yang telah dibuat dan memberikan konteks untuk perubahan tersebut.
 
--  **`-m "Baru_pertama"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
+-  **`-m "Awal_belajar"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
 
 Jadi, perintah `git commit -m` ini berfungsi untuk memungkinkan Anda untuk **menyertakan pesan commit secara langsung** di baris perintah.
 
