@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 x# Instalasi Git bash
+=======
+# Instalasi Git bash
+>>>>>>> 0468b79b710184402821aa39dad631691090ffca
 1. Buka browser dan ketikan **git csm** 
 ![](Assets/instal_1.PNG)
 
@@ -28,14 +32,22 @@ Untuk membuat repository baru di GitHub, ikuti langkah-langkah berikut.
 ![](Assets/New_repository2.PNG)
 
 Sebagai Contoh : 
+<<<<<<< HEAD
 ![[Pasted image 20240802112259.png]]
+=======
+![](Assets/New_repository3.PNG)
+>>>>>>> 0468b79b710184402821aa39dad631691090ffca
 
 4. Setelah semuanya siap, langsung klik **Create repository** di bawah 
 ![](Assets/New_repository4.PNG)
 
 5. Selanjutnya kita di arahkan ke tampilan Repository baru 
 
+<<<<<<< HEAD
 ![[Pasted image 20240802112331.png]]
+=======
+![](Assets/New_repository5.PNG)
+>>>>>>> 0468b79b710184402821aa39dad631691090ffca
 # Konfigurasi awal di git bash (config)
 
 1. git config --list
@@ -123,7 +135,11 @@ digunakan untuk mengelola repositori jarak jauh (remote repositories) yang terhu
 
 ketik code seperti berikut : 
 ```bash
+<<<<<<< HEAD
 git remote add origin
+=======
+git remote origin
+>>>>>>> 0468b79b710184402821aa39dad631691090ffca
 ```
 
 Contoh : 
@@ -162,7 +178,11 @@ Contoh penerapan dalam **git** :
 Contoh di atas menyatakan perintah:
 - **`git commit`**: Perintah ini menyimpan isi dari perubahan yang ada ke dalam riwayat commit repositori Git. Commit ini mencatat perubahan yang telah dibuat dan memberikan konteks untuk perubahan tersebut.
 
+<<<<<<< HEAD
 -  **`-m "Awal_belajar"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
+=======
+-  **`-m "Baru_pertama"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
+>>>>>>> 0468b79b710184402821aa39dad631691090ffca
 
 Jadi, perintah `git commit -m` ini berfungsi untuk memungkinkan Anda untuk **menyertakan pesan commit secara langsung** di baris perintah.
 
