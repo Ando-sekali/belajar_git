@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-x# Instalasi Git bash
-=======
 # Instalasi Git bash
->>>>>>> 0468b79b710184402821aa39dad631691090ffca
+ 0468b79b710184402821aa39dad631691090ffca
 1. Buka browser dan ketikan **git csm** 
 ![](Assets/instal_1.PNG)
 
@@ -32,22 +29,17 @@ Untuk membuat repository baru di GitHub, ikuti langkah-langkah berikut.
 ![](Assets/New_repository2.PNG)
 
 Sebagai Contoh : 
-<<<<<<< HEAD
-![[Pasted image 20240802112259.png]]
-=======
+![](Assets/New_Repository2.PNG)
+
 ![](Assets/New_repository3.PNG)
->>>>>>> 0468b79b710184402821aa39dad631691090ffca
+
 
 4. Setelah semuanya siap, langsung klik **Create repository** di bawah 
 ![](Assets/New_repository4.PNG)
 
 5. Selanjutnya kita di arahkan ke tampilan Repository baru 
-
-<<<<<<< HEAD
-![[Pasted image 20240802112331.png]]
-=======
 ![](Assets/New_repository5.PNG)
->>>>>>> 0468b79b710184402821aa39dad631691090ffca
+>Nah sekarang kita sudah berhasil menambahkan repository baru. Langkah selanutya mari kita konfigurasikan username dan email kita di GitHub...
 # Konfigurasi awal di git bash (config)
 
 1. git config --list
@@ -79,6 +71,8 @@ Sebagai Contoh :
 ![](Assets/config2.PNG)
 
 Setelah mengatur konfigurasi username dan email kita, kita gunakan kembali perintah `git config --list`. Untuk menampilkan seluruh pengaturan konfigurasi dan mengecek apakah konfigurasi yang sebelumnhya sudah berlaku atau belum...
+
+> Selanjutnya, mari kita akses folder lokal kita diGitBash...
 # Akses Folder proyek di git bash
 gunakan perintah cd sampai ke direktori
 
@@ -109,6 +103,8 @@ Contoh penerapan dalam **gitbash** :
 
 Contoh di atas bertujuan menuju ke folder proyek kita dengan sekali jalan, tanpa harus setiap kali memakai perintah `ls` untuk melihat kemana kita selanjutnya.
 
+> Nice, kita sudah akses folder/file kita. Selanjutnya mari kita hubufnkan ke GitHub...
+
 # Menghubungkan folder proyek lokal ke github
 
 Untuk memudahkan pengelolaan versi dan kolaborasi, Anda dapat menghubungkan folder proyek lokal Anda ke GitHub. Berikut adalah langkah-langkah sederhana untuk menginisialisasi repository lokal, menghubungkannya dengan GitHub
@@ -135,11 +131,7 @@ digunakan untuk mengelola repositori jarak jauh (remote repositories) yang terhu
 
 ketik code seperti berikut : 
 ```bash
-<<<<<<< HEAD
 git remote add origin
-=======
-git remote origin
->>>>>>> 0468b79b710184402821aa39dad631691090ffca
 ```
 
 Contoh : 
@@ -178,11 +170,9 @@ Contoh penerapan dalam **git** :
 Contoh di atas menyatakan perintah:
 - **`git commit`**: Perintah ini menyimpan isi dari perubahan yang ada ke dalam riwayat commit repositori Git. Commit ini mencatat perubahan yang telah dibuat dan memberikan konteks untuk perubahan tersebut.
 
-<<<<<<< HEAD
 -  **`-m "Awal_belajar"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
-=======
+
 -  **`-m "Baru_pertama"`**: Opsi `-m` diikuti dengan pesan dalam tanda kutip adalah cara untuk langsung menyertakan pesan commit saat menjalankan perintah `git commit`. Pesan ini memberikan deskripsi singkat tentang perubahan yang telah Anda buat.
->>>>>>> 0468b79b710184402821aa39dad631691090ffca
 
 Jadi, perintah `git commit -m` ini berfungsi untuk memungkinkan Anda untuk **menyertakan pesan commit secara langsung** di baris perintah.
 
@@ -208,7 +198,7 @@ Setelah kita selesai memodifikasi perubahan pada direktori, kita login ke akun *
 
 - Sesudah termodifikasi : 
 
-![[Pasted image 20240801221715.png]]
+![](Assets/New_repository6.PNG)
 
 > Nah saya sudah berhasil memodifikasi isi depository saya di **github**, ada 1 commit yang sudah kita tambahkan sebelumnya...
 
